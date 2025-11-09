@@ -1,0 +1,42 @@
+<html>
+<body>
+<input type="checkbox" id="likeButton" onclick="myFunction('like')">
+<input type="checkbox" id="dislikeButton" onclick="myFunction('dislike')">
+
+<script src="C:\Users\alexa\Desktop\likecounter.js"></script>
+</body>
+</html>
+
+html code 
+javascript code
+
+currently all this does is set a variable eqaul to 1, 0 or -1, honestly idk how to implement it with the database and stuff
+
+
+let count = 0
+function myFunction(buttonClicked) {
+
+	var likeButton = document.getElementById("likeButton");
+	var dislikeButton = document.getElementById("dislikeButton");
+	
+	if (buttonClicked == "like") {
+		if (likeButton.checked == true) {
+			count = 1
+			dislikeButton.checked = false
+		} else {
+			count = 0
+		}
+	} else {
+		if (dislikeButton.checked == true) {
+			count = -1
+			likeButton.checked = false
+		} else {
+			count = 0
+		}
+	}	
+
+
+
+
+	
+}
